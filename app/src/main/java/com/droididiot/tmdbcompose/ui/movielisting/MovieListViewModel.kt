@@ -43,8 +43,7 @@ class MovieListViewModel @Inject constructor(
             _uiState.update { it.copy(movies = allMovies) }
         } else {
             val filteredMovies = allMovies.filter { movie ->
-                movie.title.contains(query, ignoreCase = true) ||
-                        movie.overview.contains(query, ignoreCase = true)
+                movie.title.contains(query, ignoreCase = true)
             }
             _uiState.update { it.copy(movies = filteredMovies) }
         }
