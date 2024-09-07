@@ -1,3 +1,4 @@
 <resources>
     <string name="app_name">TMDB Compose</string>
+    <string name="trending_movies_title">Trending Movies</string>
 </resources>
